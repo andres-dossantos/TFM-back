@@ -26,7 +26,7 @@ This project is meant to be used together with the [baseapp-frontend](https://gi
 2. Create a virtual enviroment and install the dependencies:
 
 ```bash
-python -m venv .venv # Create a virtual enviroment 
+python3 -m venv .venv # Create a virtual enviroment 
 source .venv/bin/activate # If on Linux or MacOS
 .\venv\Scripts\activate # If on Windows 
 pip install -r requirements.txt #Install depedencies 
@@ -35,23 +35,23 @@ pip install -r requirements.txt #Install depedencies
 3. Apply migrations:
 
 ```bash
-python manage.py migrate
+python3 manage.py migrate
 ```
 
 4. Install theme: 
 
 ```bash
-python manage.py loaddata admin_interface_theme_uswds.json
+python3 manage.py loaddata admin_interface_theme_uswds.json
 ```
 
 5. Create superuser:
 
 ```bash
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 6. Run development server:
 
 ```bash
-python manage.py runserver
+python3 manage.py runserver
 ```
